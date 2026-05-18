@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# YOLO model weights
+*.pt
+
+# Output files
+outputs/
+
+# Temporary files
+*.tmp
+
+# VS Code settings
+.vscode/
+
+# Streamlit cache
+.streamlit/
+
+# System files
+.DS_Store
+Thumbs.db
+
+app.py
