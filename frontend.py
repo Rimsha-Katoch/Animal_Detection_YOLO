@@ -11,20 +11,172 @@ from detector import detect_animals
 
 st.set_page_config(page_title="Animal Detection System",page_icon="🐾",layout="centered")
 
-st.sidebar.title("About")
+# SIDEBAR
+st.sidebar.title("🐾 About Project")
 
 st.sidebar.write(
     """
-    AI-powered Animal Detection System
-    using YOLOv8 and OpenCV.
+    The Animal Detection System is an AI-powered
+    Computer Vision project built using YOLOv8,
+    OpenCV, and Streamlit.
 
-    Features:
-    - Image Detection
-    - Webcam Detection
-    - Video Detection
-    - Download Results
+    The application can detect animals in:
+    - Images
+    - Videos
+    - Live Webcam Streams
+
+    using real-time object detection technology.
     """
 )
+
+# =========================
+# FEATURES
+# =========================
+
+st.sidebar.markdown("## 🚀 Key Features")
+
+st.sidebar.write(
+    """
+    ✅ Real-Time Animal Detection  
+    ✅ Image Upload Detection  
+    ✅ Video Upload Detection  
+    ✅ Live Webcam Detection  
+    ✅ Confidence Score Display  
+    ✅ Download Detection Results  
+    ✅ Interactive Streamlit Frontend  
+    ✅ YOLOv8 Deep Learning Integration  
+    """
+)
+
+# TECHNOLOGIES USED
+
+with st.sidebar.expander("🧠 Technologies Used"):
+
+    st.write(
+        """
+        ### Technologies and Tools
+
+        🐍 **Python**  
+        Main programming language used for building the application.
+
+        🤖 **YOLOv8**  
+        Deep learning object detection model used for real-time animal detection.
+
+        📷 **OpenCV**  
+        Used for image processing, video handling, and webcam integration.
+
+        🌐 **Streamlit**  
+        Used to create the interactive web application frontend.
+
+        🔢 **NumPy**  
+        Handles image arrays and numerical processing.
+
+        🎥 **streamlit-webrtc**  
+        Enables real-time webcam streaming inside the Streamlit app.
+        """
+    )
+
+# ABOUT YOLOV8
+with st.sidebar.expander("🤖 About YOLOv8 Model"):
+
+    st.write(
+        """
+        ### YOLOv8 Object Detection Model
+
+        This project uses the YOLOv8 Nano model
+        (`yolov8n.pt`) developed by Ultralytics.
+
+        YOLO stands for:
+        **You Only Look Once**
+
+        YOLOv8 is a modern deep learning model that can:
+        - Detect objects
+        - Identify object classes
+        - Predict object locations
+        - Work in real time
+
+        The Nano version was selected because it is:
+        ✅ Lightweight  
+        ✅ Fast  
+        ✅ Suitable for normal laptops  
+        ✅ Optimized for real-time detection
+        """
+    )
+# HOW SYSTEM WORKS
+with st.sidebar.expander("🔍 How the System Works"):
+
+    st.write(
+        """
+        ### Detection Workflow
+
+        1️⃣ User uploads an image/video or starts webcam.
+
+        2️⃣ OpenCV captures frames from the input source.
+
+        3️⃣ YOLOv8 processes each frame using AI-based object detection.
+
+        4️⃣ The model predicts:
+        - Animal Name
+        - Confidence Score
+        - Bounding Box Coordinates
+
+        5️⃣ Final detection results are displayed in the Streamlit frontend.
+        """
+    )
+
+# SUPPORTED ANIMALS
+with st.sidebar.expander("🐾 Supported Animal Classes"):
+
+    st.write(
+        """
+        ### Animals Detected by the System
+
+        🐶 **Dog**         
+        🐱 **Cat**  
+        🐴 **Horse**  
+        🐄 **Cow**  
+        🐑 **Sheep**  
+        🐘 **Elephant**  
+        🐻 **Bear**  
+        🦓 **Zebra**  
+        🦒 **Giraffe**  
+        🐦 **Bird**  
+        """
+    )
+
+# CONFIDENCE SCORE
+with st.sidebar.expander("📊 Confidence Threshold"):
+
+    st.write(
+        """
+        ### Confidence Score
+
+        The confidence score shows how certain the AI model is about a detection.
+
+        Example:
+        - 95% Confidence → Highly certain detection
+        - 60% Confidence → Moderate certainty
+
+        The project uses a confidence threshold to reduce weak or false detections.
+        """
+    )
+
+# REAL-WORLD APPLICATIONS
+with st.sidebar.expander("🌍 Real-World Applications"):
+
+    st.write(
+        """
+        ### Applications of the Project
+
+        🌲 Wildlife Monitoring  
+        📹 Smart CCTV Systems  
+        🐾 Animal Tracking  
+        🏞 Forest Safety Systems  
+        🦁 Zoo Surveillance  
+        🤖 AI Research Projects  
+        📚 Educational Computer Vision Applications  
+        """
+    )
 
 st.title("🐾 Animal Detection System")
 
